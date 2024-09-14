@@ -9,7 +9,7 @@ export default class Kartya {
     }
 
     kepKeszit(){
-        this.szuloElem.append()
+        this.szuloElem.append(`<li class = "kiskepek" ></li>`)
     }
 
 }
