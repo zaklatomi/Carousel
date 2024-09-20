@@ -1,15 +1,27 @@
 export default class Kartya {
-    #kep = {}; //privát adattag
-  
+
+    #kep = {};
+
     constructor(kep, szuloElem) {
-      /*inicializálja az adattagokat*/
         this.#kep = kep;
-        this.szuloElem =szuloElem;
-        this.kepKeszit();
+        this.szuloElem = szuloElem;
+        this.createElement();
     }
 
-    kepKeszit(){
-        this.szuloElem.append(`<li class = "kiskepek" ></li>`)
-    }
+    createElement() {
 
+        const li = document.createElement('li');
+
+        const img = document.createElement('img');
+        img.classList.add("carouselElem");
+        img.src = this.#kep.imgUrl;
+        img.alt = this.#kep.title;
+
+
+        li.appendChild(img);
+
+
+
+        this.szuloElem.appendChild(li);
+    }
 }

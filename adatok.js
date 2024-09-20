@@ -1,16 +1,15 @@
-//objektumlista
-export const kepek = [
-    {
-      nev: "city",
-      url: "Kepek/kep1.jpg",
-    },
-    {
-      nev: "seal",
-      url: "Kepek/kep2.jpg",
-    },
-    {
-      nev: "bicycle",
-      url: "Kepek/kep3.jpg",
-    },
-  ];
-  
+export const carouselData = [
+  {
+      title: "Kép 1",
+      imgUrl: "Kepek/kep0.jpg"
+  },
+  {
+      title: "Kép 2",
+      imgUrl: "Kepek/kep1.jpg"
+  },
+  {
+      title: "Kép 3",
+      imgUrl: "Kepek/kep2.jpg"
+  }
+
+];
